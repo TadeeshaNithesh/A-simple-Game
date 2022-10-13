@@ -27,3 +27,16 @@ function generateCat() {
 function resetCats() {
     document.getElementById('flex-cat-gen').remove();
 }
+
+//Challenge 3: Dog Generator
+
+async function generateDog() {
+    var image = document.createElement('img');
+    var div = document.getElementById('flex-dog-gen');
+    image.src = 'http://thedogapi.com/api/images/get?format=src&type=gif&size=small';
+    div.appendChild(image);
+}
+
+function resetDogs() {
+    document.getElementById('flex-dog-gen').remove();
+}
